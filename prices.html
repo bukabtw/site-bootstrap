@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Цены</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header class="d-flex align-items-center py-3 px-4">
+    <div class="auth-button-wrapper">
+      <a href="sign_in.html" class="btn btn-outline-primary">Войти/Зарегистрироваться</a>
+    </div>
+    <div class="nav-wrapper">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="main.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="possibilities.html" class="nav-link">Возможности</a></li>
+        <li class="nav-item"><a href="prices.html" class="nav-link active" aria-current="page">Цены</a></li>
+        <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container py-5">
+    <h1>Наши цены</h1>
+    <p class="lead">Ознакомьтесь с нашими тарифами и выберите оптимальный для вас.</p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            Разработка веб-сайта (визитка)
+          </div>
+          <div class="pricing-card-body">
+            <h4 class="pricing-card-title">10 000 ₽<small class="text-muted fw-light">/проект</small></h4>
+            <ul>
+              <li>Адаптивный дизайн</li>
+              <li>До 5 страниц</li>
+              <li>Базовая SEO оптимизация</li>
+            </ul>
+            <button type="button" class="btn btn-primary" onclick="redirectToAuth()">Заказать</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            Разработка интернет-магазина
+          </div>
+          <div class="pricing-card-body">
+            <h4 class="pricing-card-title">от 50 000 ₽<small class="text-muted fw-light">/проект</small></h4>
+            <ul>
+              <li>Неограниченное количество товаров</li>
+              <li>Интеграция с платежными системами</li>
+              <li>Расширенная SEO оптимизация</li>
+            </ul>
+            <button type="button" class="btn btn-primary" onclick="redirectToAuth()">Заказать</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            Техническая поддержка
+          </div>
+          <div class="pricing-card-body">
+            <h4 class="pricing-card-title">5 000 ₽<small class="text-muted fw-light">/месяц</small></h4>
+            <ul>
+              <li>Регулярные обновления</li>
+              <li>Устранение ошибок</li>
+              <li>Консультации</li>
+            </ul>
+            <button type="button" class="btn btn-primary" onclick="redirectToAuth()">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    | 2025 |
+  </footer>
+
+  <script>
+    function redirectToAuth() {
+      window.location.href = 'sign_in.html?message=authRequired';
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

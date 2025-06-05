@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-center">
+
+      <header class="d-flex align-items-center py-3 px-4">
+    <div class="nav-wrapper">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="main.html" class="nav-link">Главная</a></li>
+        <li class="nav-item"><a href="possibilities.html" class="nav-link">Возможности</a></li>
+        <li class="nav-item"><a href="prices.html" class="nav-link">Цены</a></li>
+        <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
+      </ul>
+    </div>
+
+  </header>
+
+    <main class="form-signin w-100 m-auto">
+        <form> 
+            <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
+
+            <div class="form-floating">
+            <input type="text" class="form-control" id="floatingLogin" placeholder=" " pattern="[A-Za-z]+" title="Логин должен содержать только английские буквы (минимум 3, максимум 15)" required minlength="3" maxlength="15">
+            <label for="floatingLogin">Логин</label>
+            </div>
+
+
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Почта</label>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Пароль</label>
+            </div>
+            <button class="btn btn-primary w-100 py-2" type="submit">Зарегестрироваться</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        | 2025 |
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

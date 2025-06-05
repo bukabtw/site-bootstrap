@@ -1,0 +1,415 @@
+body {
+    background-color: #FFC0CB;
+}
+
+.fixed-contact-info {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #FFC0CB
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0;
+  color: #000;
+  font-size: 14px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #FDDDE6;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-floating {
+  margin-bottom: 1rem;
+}
+
+.form-floating > .form-control {
+  height: auto;
+  padding: .75rem .75rem;
+}
+
+.form-control {
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    color: #333;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-check-input {
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.form-check-input:checked {
+    background-color: #FFC0CB;
+    border-color: #FFC0CB;
+    background-size: 100% 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.form-check-input:focus {
+    box-shadow: none;  /
+    border-color: #FFC0CB;
+}
+
+
+.container {
+ }
+
+.row {
+  }
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #29ABE2, #004385);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Скрываем изображения */
+.feature-icon img {
+  display: none;
+}
+
+/* Стиль для белой точки */
+.feature-icon .white-dot {
+  width: 1.5rem;      /* Размер точки */
+  height: 1.5rem;     /* Размер точки */
+  background-color: white; /* Белый цвет */
+  border-radius: 50%;   /* Круглая форма */
+}
+
+
+
+
+.feature-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.team-member {
+  background-color: #FDDDE6;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+
+.icon-link {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.icon-link:hover svg {
+  fill: black;
+}
+
+.icon-link svg {
+  fill: black;
+}
+
+.nav-link {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #eee;
+}
+
+.nav-link.active {
+  color: black;
+  background-color: #ccc;
+  border: 1px solid black;
+}
+
+.nav-link.active:hover {
+  color: black;
+  background-color: #999;
+}
+
+.nav-item .nav-link.active {
+  color: black;
+  background-color: #ccc;
+  border: 1px solid black;
+}
+
+.nav-item .nav-link.active:hover {
+  color: black;
+  background-color: #999;
+}
+
+header {
+  position: relative;
+}
+
+header .auth-button-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+header .nav-wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.auth-button-wrapper .btn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button-wrapper .btn:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.auth-button-wrapper .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.animation-gif {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: auto;
+}
+
+
+.btn-primary {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-primary:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.btn-secondary {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn-secondary:hover {
+    color: black;
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lead {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.accordion-button {
+    background-color: #FDDDE6;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #FFB6C1;
+    color: black;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #86b7fe;
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.accordion-item {
+    border: none; 
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    margin-bottom: 0; 
+}
+
+/* about.css */
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lead {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding-left: 0; /* Убираем отступ слева */
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Стили для фото команды в правом блоке */
+.img-fluid.rounded {
+    border: 1px solid black;
+    border-radius: 10px !important;
+}
+
+/* Стили для блоков с информацией о членах команды */
+.team-member-about {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #FDDDE6; /* Розовый фон, как у team-member */
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.team-member-about img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.team-member-about h3 {
+    margin-bottom: 5px;
+}
+
+/* Дополнительные стили для текста внизу фото */
+.text-muted.text-center.mt-3 {
+    font-style: italic;
+}
+
+.pricing-card {
+    background-color: #FDDDE6;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .pricing-card-header {
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .pricing-card-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .pricing-card li {
+    margin-bottom: 5px;
+  }
+
+  .pricing-card .btn-primary {
+    width: 100%;
+  }
+
+  h1 {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .lead {
+      text-align: center;
+      margin-bottom: 40px;
+  }
