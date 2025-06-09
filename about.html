@@ -8,9 +8,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
+    
+    <div class="fixed-contact-info">
+      <p onclick="copyToClipboard('+7 (495) 232-52-52')" class="copyable">Телефон: +7 (495) 232-52-52</p>
+      <p onclick="copyToClipboard('info@pikmirazrabi.com')" class="copyable">Email: info@pikmirazrabi.com</p>
+    </div>
+    <div id="copy-alert" class="copy-alert">Скопировано!</div>
+  
   <header class="d-flex align-items-center py-3 px-4">
-    <!-- Скопируйте содержимое тега <header> из main.html -->
     <div class="auth-button-wrapper">
       <a href="sign_in.html" class="btn btn-outline-primary">Войти/Зарегистрироваться</a>
     </div>
@@ -85,5 +90,19 @@
     | 2025 |
   </footer>
 
+    <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        const alertBox = document.getElementById('copy-alert');
+        alertBox.classList.add('show');
+        setTimeout(() => {
+          alertBox.classList.remove('show');
+        }, 2000);
+      }).catch(err => {
+        console.error('Ошибка копирования:', err);
+      });
+    }
+  </script>
+  
 </body>
 </html>

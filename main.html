@@ -10,10 +10,11 @@
 </head>
 <body>
 
- <div class="fixed-contact-info">
-    <p>Телефон: +7 (495) 232-52-52</p>
-    <p>Email: info@pikmirazrabi.com</p>
+  <div class="fixed-contact-info">
+    <p onclick="copyToClipboard('+7 (495) 232-52-52')" class="copyable">Телефон: +7 (495) 232-52-52</p>
+    <p onclick="copyToClipboard('info@pikmirazrabi.com')" class="copyable">Email: info@pikmirazrabi.com</p>
   </div>
+  <div id="copy-alert" class="copy-alert">Скопировано!</div>
 
   <header class="d-flex align-items-center py-3 px-4">
     <div class="auth-button-wrapper">
@@ -30,8 +31,6 @@
     </div>
 
   </header>
-
-
 
   <div class="container py-5">
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -68,6 +67,27 @@
 <footer>
  | 2025 |
 </footer>
+
+<div class="fixed-contact-info">
+  <p onclick="copyToClipboard('+7 (495) 232-52-52')" class="copyable">Телефон: +7 (495) 232-52-52</p>
+  <p onclick="copyToClipboard('info@pikmirazrabi.com')" class="copyable">Email: info@pikmirazrabi.com</p>
+</div>
+
+<div id="copy-alert" class="copy-alert">Скопировано!</div>
+
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      const alertBox = document.getElementById('copy-alert');
+      alertBox.classList.add('show');
+      setTimeout(() => {
+        alertBox.classList.remove('show');
+      }, 2000);
+    }).catch(err => {
+      console.error('Ошибка копирования:', err);
+    });
+  }
+</script>
 
 </body>
 </html>

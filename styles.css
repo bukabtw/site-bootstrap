@@ -14,7 +14,6 @@ body {
   z-index: 1000;
 }
 
-
 header {
     margin-bottom: 20px;
 }
@@ -72,16 +71,9 @@ footer {
 }
 
 .form-check-input:focus {
-    box-shadow: none;  /
+    box-shadow: none;
     border-color: #FFC0CB;
 }
-
-
-.container {
- }
-
-.row {
-  }
 
 .feature {
   display: flex;
@@ -104,21 +96,16 @@ footer {
   overflow: hidden;
 }
 
-/* Скрываем изображения */
 .feature-icon img {
   display: none;
 }
 
-/* Стиль для белой точки */
 .feature-icon .white-dot {
-  width: 1.5rem;      /* Размер точки */
-  height: 1.5rem;     /* Размер точки */
-  background-color: white; /* Белый цвет */
-  border-radius: 50%;   /* Круглая форма */
+  width: 1.5rem;      
+  height: 1.5rem;     
+  background-color: white;
+  border-radius: 50%;   
 }
-
-
-
 
 .feature-icon img {
   width: 100%;
@@ -239,7 +226,6 @@ header .nav-wrapper {
   height: auto;
 }
 
-
 .btn-primary {
   color: black;
   background-color: white;
@@ -312,8 +298,6 @@ h1 {
     margin-bottom: 0; 
 }
 
-/* about.css */
-
 h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -325,25 +309,23 @@ h1 {
 }
 
 ul {
-    list-style: none; /* Убираем маркеры списка */
-    padding-left: 0; /* Убираем отступ слева */
+    list-style: none;
+    padding-left: 0;
 }
 
 li {
     margin-bottom: 5px;
 }
 
-/* Стили для фото команды в правом блоке */
 .img-fluid.rounded {
     border: 1px solid black;
     border-radius: 10px !important;
 }
 
-/* Стили для блоков с информацией о членах команды */
 .team-member-about {
     text-align: center;
     margin-bottom: 20px;
-    background-color: #FDDDE6; /* Розовый фон, как у team-member */
+    background-color: #FDDDE6;
     padding: 15px;
     border-radius: 10px;
     border: 1px solid black;
@@ -362,7 +344,6 @@ li {
     margin-bottom: 5px;
 }
 
-/* Дополнительные стили для текста внизу фото */
 .text-muted.text-center.mt-3 {
     font-style: italic;
 }
@@ -413,3 +394,32 @@ li {
       text-align: center;
       margin-bottom: 40px;
   }
+
+  .copy-alert {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.copy-alert.show {
+  opacity: 1;
+}
+
+.copyable {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.copyable:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
